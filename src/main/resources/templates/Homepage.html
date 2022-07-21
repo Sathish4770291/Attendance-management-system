@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>Homepage</title>
+<link rel="stylesheet" th:href="@{/CSS/style.css}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+	rel="stylesheet">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a class="logo" href=""><img src=""  th:src="@{/images/logo1.jpg}" ></a>
+			<div class="nav-links">
+				<ul>
+					<li><a class="navl" href="">Home</a></li>
+					<li><a class="navl" onclick="openNav()">Attendance</a></li>
+					<li><a class="navl" th:href="@{/student}">Student </a></li>
+					<li><a class="navl" href="">Employee</a></li>
+					<li><a class="navl" href="">Exam </a></li>
+					<li><a class="navl" href="">Fee Details</a></li>
+					<li><a class="navl" href="">Login History</a></li>
+					<li><a class="navl" id="logout" th:href ="@{/login}">Logout</a></li>
+				</ul>
+
+			</div>
+		</nav>
+	</section>
+	<marquee>VISION: To transform our institution into quality
+		technical education center imparting updated technical knowledge with
+		character building.&nbsp;&nbsp;&nbsp; MISSION :To create an excellent
+		teaching and learning environment for our staff and students to
+		realize their full potential thus enabling them to contribute
+		positively to the community. To significantly enhance the
+		self-confidence level for developing creative skills of staff and
+		students.</marquee>
+	<h1>S.A.ENGINEERING COLLEGE</h1>
+	<p>An Autonomous Institution Affiliated to Anna University,
+		Chennai.</p>
+	<p>Accredited by NBA, NAAC 'A' Grade & ISO 9001:2015 Certified
+		Institution.</p>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a th:href="@{/studentAttendance}">Take Attendance</a> <a href="#">Absentees</a> <a
+			href="#">O.D</a> <a href="#">Report</a>
+	</div>
+	<script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+</body>
+</html>

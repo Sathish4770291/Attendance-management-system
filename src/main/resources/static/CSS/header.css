@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+	  body {
+	
+	width: 100%;
+	background-size: cover;
+}  
+
+h1 {
+	color: Black;
+	text-align: center;
+	font-size: 100px;
+	padding-top: 20px;
+}
+
+p {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+marquee {
+	font-size: 20px;
+	font-weight: 800;
+	color: white;
+	font-family: sans-serif;
+	background-color: black;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+	background-color: white;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.nav-links {
+	flex: 1;
+	text-align: left;
+	background-color: rgba(6, 13, 110, 0.726);
+	overflow: hidden;
+	height:47px;
+}
+
+.nav-links ul li {
+	color: #f2f2f2;
+	text-align: center;
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.nav-links ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.nav-links ul li:hover {
+	background-color: black;
+	color: black;
+	transition: 1s;
+}
+
+.nav-links ul li a:hover {
+	color: rgb(8, 4, 253);
+	transition: 1s;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#markall{
+	margin-left: 700px;
+}
+
+#btn{
+	margin-left: 270px;
+}
+#logout{
+	margin-left: 280px;
+}
+
+
+#submit{
+	align-content: flex-end;
+	    margin-left: 50px;
+	    
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
